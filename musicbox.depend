@@ -57,3 +57,32 @@
 1397247943 d:\perso\dev\arduino_projects\musicbox\musicbox\include\songplayer.h
 	"Arduino.h"
 
+1430986421 source:d:\perso\dev\arduino_projects\musicbox\musicbox\musicbox.ino
+	<Arduino.h>
+	<avr/pgmspace.h>
+	<LiquidCrystal.h>
+	"include/tones.h"
+	"include/SongPlayer.h"
+	"include/CMenu.h"
+	"include/songs.h"
+	"include/CKeypad.h"
+
+1397247943 d:\perso\dev\arduino_projects\musicbox\musicbox\include\tones.h
+
+1430987239 d:\perso\dev\arduino_projects\musicbox\musicbox\include\cmenu.h
+	<Arduino.h>
+	<LiquidCrystal.h>
+
+1430982736 d:\perso\dev\arduino_projects\musicbox\musicbox\include\songs.h
+
+1430986475 source:d:\perso\dev\arduino_projects\musicbox\musicbox\src\ckeypad.cpp
+	<Arduino.h>
+	"include/CKeypad.h"
+
+1430986138 d:\perso\dev\arduino_projects\musicbox\musicbox\include\ckeypad.h
+
+1430987256 source:d:\perso\dev\arduino_projects\musicbox\musicbox\src\cmenu.cpp
+	<Arduino.h>
+	"include/CMenu.h"
+	"include/CKeypad.h"
+
