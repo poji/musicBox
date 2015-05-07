@@ -3,10 +3,14 @@
 
 #include "Arduino.h"
 
+/* this structure is for SRAM storage, it's more simple to use, but honestly,
+    the class manage all the (little) difficulties
+*/
+
 typedef struct SSong {
-    word notes[64];             // longueur de tableau totalement arbitraire, la version PROGMEM utilise des pointeurs, plus économe en espace mémoire du coup
+    word notes[64];             // length arbitrary set
     word durations[64];         // idem
-    byte length;
+    byte length;                // real length of the song (yes GARBAGE !!!! if the song is 16 notes long, we use (48*2)*2 extra bytes
     String name;
 } TSong;
 

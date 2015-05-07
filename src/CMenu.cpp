@@ -4,7 +4,7 @@
 
 #define BLANKLINE "                "
 
-CMenu::CMenu(LiquidCrystal &lcd):mlcd(lcd), mrootMenu(NULL), mdisplayedItem(NULL)
+CMenu::CMenu(LiquidCrystal &lcd):mlcd(lcd), mrootMenu(NULL), mdisplayedItem(NULL), mlastCmd(0)
 {}
 CMenu::~CMenu(){}
 
@@ -17,18 +17,27 @@ void CMenu::begin(int row){
     mrow = row;
 }
 
+int CMenu::getCmd(void) const {
+    return mlastCmd;
+}
+
 TMenuItem *CMenu::getDisplayedMenu() const
 {
     return mdisplayedItem;
 }
 
 
-void CMenu::onKey(int key)
+int CMenu::onKey(int key)
 {
     switch(key){
     case CKeypad::KEYPAD_SELECT:
-        if(mdisplayedItem!=NULL && mdisplayedItem->callback!=NULL){
-            mdisplayedItem->callback();
+        if(mdisplayedItem!=NULL)
+        {
+            if(mdisplayedItem->callback!=NULL)
+                mdisplayedItem->callback();
+
+            mlastCmd = mdisplayedItem->cmd;
+            return mlastCmd;
         }
         break;
     case CKeypad::KEYPAD_DOWN:
@@ -44,6 +53,7 @@ void CMenu::onKey(int key)
         break;
     }
 
+    return 0;
 }
 
 void CMenu::draw(void) const

@@ -4,6 +4,12 @@
 #define NUMKEYS 5
 extern int adcKeyVal[];
 
+/*
+    the linksprite lcd has an integrated keypad with fice buttons, using only one analog pin
+    this class is only an helper to ease the use of those keypad
+    based on linksprite sample code.
+*/
+
 class CKeypad
 {
     public:

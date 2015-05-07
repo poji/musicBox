@@ -3,9 +3,9 @@
 
 /* code ARDUINO généré par NokiaRTTL2Arduino */
 
-// les notes et les durées sont stockée en FLASH RAM (utilisation de PROGMEM
+// notes and durations are stored in FLASH RAM with PROGMEM
 
-// La Famille Addams
+// Addams Familly
 prog_uint16_t addamsNotes[52] PROGMEM = {NOTE_C5,NOTE_D5,NOTE_E5,NOTE_F5,0,NOTE_D5,NOTE_E5,NOTE_FS5,NOTE_G5,0,NOTE_D5,NOTE_E5,NOTE_FS5,NOTE_G5,0,NOTE_D5,NOTE_E5,NOTE_FS5,NOTE_G5,0,NOTE_C5,NOTE_D5,NOTE_E5,NOTE_F5,0,NOTE_C5,NOTE_F5,NOTE_A5,NOTE_F5,NOTE_C5,NOTE_B4,NOTE_G5,NOTE_F5,NOTE_E5,NOTE_G5,NOTE_E5,NOTE_C5,NOTE_A4,NOTE_F5,NOTE_C5,NOTE_F5,NOTE_A5,NOTE_F5,NOTE_C5,NOTE_B4,NOTE_G5,NOTE_F5,NOTE_E5,NOTE_C5,NOTE_D5,NOTE_E5,NOTE_F5};
 prog_uint8_t addamsDurations[52] PROGMEM = {8,8,8,8,1,8,8,8,8,1,8,8,8,8,4,8,8,8,8,4,8,8,8,8,1,8,4,8,4,8,4,2,8,4,8,4,8,4,2,8,4,8,4,8,4,2,8,4,8,4,8,2};
 byte addamsLength = 52;
@@ -35,11 +35,10 @@ prog_uint16_t ToccataNotes[25] PROGMEM = {NOTE_AS5,NOTE_GS5,NOTE_AS5,NOTE_GS5,NO
 prog_uint8_t ToccataDurations[25] PROGMEM = {16,16,2,32,32,32,16,2,2,16,16,2,8,8,8,2,8,8,8,8,8,4,2,2,1};
 byte ToccataLength = 25;
 
-// la liste des morceaux est en SRAM mais les morceux en eux-m��mes sans dans la m��moire FLASH
-// on ��conomise pas mal de m��moire du coup.
-// en gros l�� ou la SRAM me permettait tout juste de stocker les 6 morceaux, l�� j'empi��te �� peine sur la FLASH (ben enfin, vraiment pas beaucoup)
-// et j'��conomise ENORMEMENT de SRAM.
+// song list is SRAM but the songs data are in FLASH RAM
+// using only SRAM, i could'nt have more than 6 songs in the list (SRAM used nearly at 80%)
 
+// this reside in SRAM, buts those are only pointers
 TSongPROGMEM songsPM[6] = {
     {"Addams", addamsLength, addamsNotes, addamsDurations},
     {"Arkanoid", arkanoidLength, arkanoidNotes, arkanoidDurations},
@@ -49,8 +48,8 @@ TSongPROGMEM songsPM[6] = {
     {"Toccata", ToccataLength, ToccataNotes, ToccataDurations}
 };
 
-
-int nbSongs = 6; // 6 titres, on pourrait imaginer en avoir facilement trois ou quatre fois plus
+// for the moment i set only 6 songs, we could potentially have for or five more
+int nbSongs = 6;
 
 /*================== END SONG INFO ==================================*/
 

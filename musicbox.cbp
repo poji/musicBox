@@ -20,12 +20,13 @@
 					<Add directory="$(ARDUINO_DIR)/arduino/cores" />
 					<Add directory="$(ARDUINO_DIR)/arduino/variants/standard" />
 					<Add directory="$(ARDUINO_DIR)/include" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-lardusim" />
 				</Linker>
 				<Environment>
-					<Variable name="ARDUINO_DIR" value="$(APP_PATH)/ardusim" />
+					<Variable name="ARDUINO_DIR" value="$(APP_PATH)\ardusim" />
 				</Environment>
 			</Target>
 			<Target title="Simulator - Release">
@@ -42,13 +43,14 @@
 					<Add directory="$(ARDUINO_DIR)/arduino/cores" />
 					<Add directory="$(ARDUINO_DIR)/arduino/variants/standard" />
 					<Add directory="$(ARDUINO_DIR)/include" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
 					<Add option="-lardusim" />
 				</Linker>
 				<Environment>
-					<Variable name="ARDUINO_DIR" value="$(APP_PATH)/ardusim" />
+					<Variable name="ARDUINO_DIR" value="$(APP_PATH)\ardusim" />
 				</Environment>
 			</Target>
 			<Target title="Arduino Uno">
@@ -66,6 +68,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/standard" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -105,6 +108,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/leonardo" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -144,6 +148,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/leonardo" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -183,6 +188,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/micro" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -220,6 +226,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/standard" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -257,6 +264,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/standard" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -294,6 +302,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/eightanaloginputs" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -331,6 +340,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/eightanaloginputs" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -368,6 +378,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/eightanaloginputs" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -405,6 +416,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/eightanaloginputs" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -442,6 +454,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/standard" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -479,6 +492,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/standard" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -515,6 +529,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/mega" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -529,7 +544,7 @@
 					<Add after='avr-size --mcu=$(MCU) --format=avr &quot;$(TARGET_OUTPUT_FILE)&quot;' />
 				</ExtraCommands>
 				<Environment>
-					<Variable name="BOARD" value="Arduino Mega 2560/ADK" />
+					<Variable name="BOARD" value="Arduino Mega 2560\ADK" />
 					<Variable name="BOARD_ID" value="mega2560" />
 					<Variable name="MCU" value="atmega2560" />
 					<Variable name="MCU_CLOCK" value="16" />
@@ -551,6 +566,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/mega" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -588,6 +604,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/standard" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -625,6 +642,7 @@
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/plus" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -651,12 +669,17 @@
 		<Compiler>
 			<Add directory="." />
 		</Compiler>
+		<Unit filename="include/CKeypad.h" />
+		<Unit filename="include/CMenu.h" />
 		<Unit filename="include/SongPlayer.h" />
+		<Unit filename="include/songs.h" />
 		<Unit filename="include/tones.h" />
 		<Unit filename="musicbox.ino">
 			<Option compile="1" />
 			<Option link="1" />
 		</Unit>
+		<Unit filename="src/CKeypad.cpp" />
+		<Unit filename="src/CMenu.cpp" />
 		<Unit filename="src/SongPlayer.cpp" />
 		<Extensions>
 			<code_completion />
