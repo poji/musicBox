@@ -26,13 +26,23 @@ Yes, for the moment i'm in discovery phase. learning.
 My skill in c/c++ are, hem, rusty... (last time i coded in c++ it was c++98 standard...).
 
 But, the final application would be :
+
 	- a detector module, battery powered
+
 	- a musicbox module, battery powered or not
 
-	Those two module would communicate via wifi OR rf (not sur for the moment, perhaps the both if possible).
-	Detector module would be manageable via a bluetooth communication (and an android apps i have to do)
-	Musicbox module would be manageable directly via lcd panel ou via bluetooth communication.
+Those two module would communicate via wifi OR rf (not sur for the moment, perhaps the both if possible).
+Detector module would be manageable via a bluetooth communication (and an android apps i have to do)
+Musicbox module would be manageable directly via lcd panel ou via bluetooth communication.
 
 It's a long term development. Don't expect high update frequency.
 
 But if you find all of this a little bit interessing, please take the code you want or need.
+
+#nota bene
+About the code : it lack comments (and some of them are in french). I will fix that shortly.
+The environmet I use : i dosen't use the standard arduino IDE but a codeblocks version adapted to arduino dev :
+
+	- the homepage : http://arduinodev.com/codeblocks/
+
+	- the download (sourceforge) : http://sourceforge.net/projects/arduinodev/files/ (take codeblocks-arduino, not arduinobuilder alone)
