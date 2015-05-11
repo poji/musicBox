@@ -21,6 +21,8 @@ CKeypad keypad;                                 // keypad management facility
 int currentSong = 0;
 char blank[17];      // for cleaning a line of the lcd
 char buffer[50];     // for debug message
+void fillBuffer(char *buffer, char fillingChar, size_t length); // buffer to send message accros serial
+
 
 // some callback, used by the menu
 void nextSong(void);
@@ -82,7 +84,9 @@ void loop() {
   }
 }
 
-
+void fillBuffer(char *buffer, char fillingChar, size_t length){
+    memset(buffer, fillingChar, length);
+}
 
 // those are callbacks for the menu, names are suffisently obvious, i think
 void nextSong(void)
