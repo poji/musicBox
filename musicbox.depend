@@ -86,3 +86,100 @@
 	"include/CMenu.h"
 	"include/CKeypad.h"
 
+1432312320 source:c:\dev\musicbox\musicbox.ino
+	<Arduino.h>
+	<avr/pgmspace.h>
+	<LiquidCrystal.h>
+	"include/tones.h"
+	"include/SongPlayer.h"
+	"include/CMenu.h"
+	"include/songs.h"
+	"include/CKeypad.h"
+
+1430927194 c:\devtools\codeblocks\arduino\hardware\arduino\cores\arduino\arduino.h
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<math.h>
+	<avr/pgmspace.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	"binary.h"
+	"WCharacter.h"
+	"WString.h"
+	"HardwareSerial.h"
+	"USBAPI.h"
+	"pins_arduino.h"
+
+1430927194 c:\devtools\codeblocks\arduino\hardware\arduino\cores\arduino\binary.h
+
+1430927194 c:\devtools\codeblocks\arduino\hardware\arduino\cores\arduino\wcharacter.h
+	<ctype.h>
+
+1430927194 c:\devtools\codeblocks\arduino\hardware\arduino\cores\arduino\wstring.h
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<avr/pgmspace.h>
+
+1430927194 c:\devtools\codeblocks\arduino\hardware\arduino\cores\arduino\hardwareserial.h
+	<inttypes.h>
+	"Stream.h"
+
+1430927194 c:\devtools\codeblocks\arduino\hardware\arduino\cores\arduino\stream.h
+	<inttypes.h>
+	"Print.h"
+
+1430927194 c:\devtools\codeblocks\arduino\hardware\arduino\cores\arduino\print.h
+	<inttypes.h>
+	<stdio.h>
+	"WString.h"
+	"Printable.h"
+
+1430927194 c:\devtools\codeblocks\arduino\hardware\arduino\cores\arduino\printable.h
+	<stdlib.h>
+
+1430927194 c:\devtools\codeblocks\arduino\hardware\arduino\cores\arduino\usbapi.h
+	<inttypes.h>
+	<avr/pgmspace.h>
+	<avr/eeprom.h>
+	<avr/interrupt.h>
+	<util/delay.h>
+	"Arduino.h"
+	"USBDesc.h"
+	"USBCore.h"
+
+1430927194 c:\devtools\codeblocks\arduino\hardware\arduino\cores\arduino\usbdesc.h
+
+1430927194 c:\devtools\codeblocks\arduino\hardware\arduino\cores\arduino\usbcore.h
+
+1362990550 c:\devtools\codeblocks\arduino\hardware\arduino\variants\standard\pins_arduino.h
+	<avr/pgmspace.h>
+
+1432312320 c:\dev\musicbox\include\tones.h
+
+1432312320 c:\dev\musicbox\include\songplayer.h
+	"Arduino.h"
+
+1432312320 c:\dev\musicbox\include\cmenu.h
+	<Arduino.h>
+	<LiquidCrystal.h>
+
+1432312320 c:\dev\musicbox\include\songs.h
+
+1432312320 c:\dev\musicbox\include\ckeypad.h
+
+1432312320 source:c:\dev\musicbox\src\ckeypad.cpp
+	<Arduino.h>
+	"include/CKeypad.h"
+
+1432312320 source:c:\dev\musicbox\src\cmenu.cpp
+	<Arduino.h>
+	"include/CMenu.h"
+	"include/CKeypad.h"
+
+1432312320 source:c:\dev\musicbox\src\songplayer.cpp
+	<Arduino.h>
+	<avr/pgmspace.h>
+	"include/SongPlayer.h"
+
