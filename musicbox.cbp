@@ -669,6 +669,7 @@
 		<Compiler>
 			<Add directory="." />
 		</Compiler>
+		<Unit filename="include/AsyncPlayer.h" />
 		<Unit filename="include/CKeypad.h" />
 		<Unit filename="include/CMenu.h" />
 		<Unit filename="include/SongPlayer.h" />
@@ -678,6 +679,7 @@
 			<Option compile="1" />
 			<Option link="1" />
 		</Unit>
+		<Unit filename="src/AsyncPlayer.cpp" />
 		<Unit filename="src/CKeypad.cpp" />
 		<Unit filename="src/CMenu.cpp" />
 		<Unit filename="src/SongPlayer.cpp" />
