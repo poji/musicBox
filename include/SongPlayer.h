@@ -1,7 +1,9 @@
 #ifndef SONGPLAYER_H
 #define SONGPLAYER_H
 
-#include "Arduino.h"
+#include <Arduino.h>
+#include <avr/pgmspace.h>
+
 
 /* this structure is for SRAM storage, it's more simple to use, but honestly,
     the class manage all the (little) difficulties
@@ -18,8 +20,8 @@ typedef struct SSongPROGMEM     // bon alors en fait, du coup dans ce projet-ci,
 {
     String Name;
     byte Length;
-    prog_uint16_t* notesAddr;
-    prog_uint8_t* durationsAddr;
+    const uint16_t* notesAddr;
+    const uint8_t* durationsAddr;
 } TSongPROGMEM;
 
 class SongPlayer

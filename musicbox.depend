@@ -4,8 +4,9 @@
 	<avr/pgmspace.h>
 	"include/SongPlayer.h"
 
-1371036702 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\arduino.h
+1430930794 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\arduino.h
 	<stdlib.h>
+	<stdbool.h>
 	<string.h>
 	<math.h>
 	<avr/pgmspace.h>
@@ -15,49 +16,58 @@
 	"WCharacter.h"
 	"WString.h"
 	"HardwareSerial.h"
+	"USBAPI.h"
 	"pins_arduino.h"
 
-1362990550 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\binary.h
+1430930794 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\binary.h
 
-1362990550 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\wcharacter.h
+1430930794 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\wcharacter.h
 	<ctype.h>
 
-1371036734 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\wstring.h
+1430930794 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\wstring.h
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	<avr/pgmspace.h>
 
-1362990550 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\hardwareserial.h
+1430930794 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\hardwareserial.h
 	<inttypes.h>
 	"Stream.h"
-	"USBAPI.h"
 
-1371036430 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\stream.h
+1430930794 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\stream.h
 	<inttypes.h>
 	"Print.h"
 
-1362990550 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\print.h
+1430930794 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\print.h
 	<inttypes.h>
 	<stdio.h>
 	"WString.h"
 	"Printable.h"
 
-1362990550 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\printable.h
-	<new.h>
+1430930794 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\printable.h
+	<stdlib.h>
 
 1362990550 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\new.h
 	<stdlib.h>
 
-1362990550 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\usbapi.h
+1430930794 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\usbapi.h
+	<inttypes.h>
+	<avr/pgmspace.h>
+	<avr/eeprom.h>
+	<avr/interrupt.h>
+	<util/delay.h>
+	"Arduino.h"
+	"USBDesc.h"
+	"USBCore.h"
 
 1362990550 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\variants\standard\pins_arduino.h
 	<avr/pgmspace.h>
 
-1430990391 d:\perso\dev\arduino_projects\musicbox\musicbox\include\songplayer.h
-	"Arduino.h"
+1432828466 d:\perso\dev\arduino_projects\musicbox\musicbox\include\songplayer.h
+	<Arduino.h>
+	<avr/pgmspace.h>
 
-1431007409 source:d:\perso\dev\arduino_projects\musicbox\musicbox\musicbox.ino
+1431356143 source:d:\perso\dev\arduino_projects\musicbox\musicbox\musicbox.ino
 	<Arduino.h>
 	<avr/pgmspace.h>
 	<LiquidCrystal.h>
@@ -73,7 +83,9 @@
 	<Arduino.h>
 	<LiquidCrystal.h>
 
-1430990160 d:\perso\dev\arduino_projects\musicbox\musicbox\include\songs.h
+1432828426 d:\perso\dev\arduino_projects\musicbox\musicbox\include\songs.h
+	<Arduino.h>
+	<avr/pgmspace.h>
 
 1430986475 source:d:\perso\dev\arduino_projects\musicbox\musicbox\src\ckeypad.cpp
 	<Arduino.h>
@@ -85,4 +97,16 @@
 	<Arduino.h>
 	"include/CMenu.h"
 	"include/CKeypad.h"
+
+1430930794 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\usbdesc.h
+
+1430930794 d:\perso\dev\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\usbcore.h
+
+1432828871 source:d:\perso\dev\arduino_projects\musicbox\musicbox\src\asyncplayer.cpp
+	"AsyncPlayer.h"
+
+1432828878 d:\perso\dev\arduino_projects\musicbox\musicbox\include\asyncplayer.h
+	<Arduino.h>
+	<avr/pgmspace.h>
+	"include/SongPlayer.h"
 
